@@ -5,16 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scentnice "Aquatic" - Definisi Kesegaran Abadi</title>
     
-    <!-- Memuat Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Memuat Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Memuat Font dari Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Memuat Font dari Google Fonts --><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     
-    <!-- Konfigurasi Tailwind kustom -->
-    <script>
+    <!-- Konfigurasi Tailwind kustom --><script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -34,8 +31,7 @@
         }
     </script>
     
-    <!-- CSS kustom untuk animasi halus -->
-    <style>
+    <!-- CSS kustom untuk animasi halus --><style>
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
@@ -85,54 +81,37 @@
 </head>
 <body class="font-sans text-brand-gray bg-brand-white">
 
-    <!-- 1. Head Bar (Navigasi) -->
-    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 p-4 transition-all duration-300">
+    <!-- 1. Head Bar (Navigasi) --><nav id="navbar" class="fixed top-0 left-0 right-0 z-50 p-4 transition-all duration-300">
         <div class="container mx-auto flex justify-between items-center px-4">
-            <!-- Kiri: Logo -->
-            <!-- DIUBAH: Teks logo diganti ke <img> placeholder -->
-            <a href="#" class="text-brand-deep-blue">
-                <!-- DIUBAH: Ukuran logo dari h-8 (32px) menjadi h-10 (40px) -->
-                <img src="/scentnice-image/logo-header.webp" alt="Scentnice Logo" class="h-10 w-auto"> <!-- h-10 (40px) -->
-            </a>
+            <!-- Kiri: Logo --><a href="#" class="text-brand-deep-blue">
+                <img src="/scentnice-image/logo-header.webp" alt="Scentnice Logo" class="h-10 w-auto"> <!-- h-10 (40px) --></a>
             
-            <!-- Tengah: Menu (Desktop) -->
-            <div class="hidden md:flex space-x-10">
+            <!-- Tengah: Menu (Desktop) --><div class="hidden md:flex space-x-10">
                 <a href="#varian" class="font-medium hover:text-brand-teal transition-colors">Varian</a>
                 <a href="#tentang" class="font-medium hover:text-brand-teal transition-colors">Tentang Kami</a>
                 <a href="#testimoni" class="font-medium hover:text-brand-teal transition-colors">Testimoni</a>
             </div>
             
-            <!-- Kanan: Ikon -->
-            <div class="flex items-center space-x-4">
-                <!-- Ikon Keranjang (DIARAHKAN KE FINAL CTA) -->
-                <a href="#final-cta" aria-label="Keranjang Belanja" class="text-brand-dark hover:text-brand-teal transition-colors">
-                    <!-- DIUBAH: Ukuran ikon dari w-6 h-6 (24px) menjadi w-7 h-7 (28px) -->
+            <!-- Kanan: Ikon --><div class="flex items-center space-x-4">
+                <!-- Ikon Keranjang (DIARAHKAN KE FINAL CTA) --><a href="#final-cta" aria-label="Keranjang Belanja" class="text-brand-dark hover:text-brand-teal transition-colors">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                 </a>
-                <!-- Ikon Shopee -->
-                <a href="https://shopee.co.id/" target="_blank" rel="noopener noreferrer" aria-label="Scentnice di Shopee" class="text-brand-dark hover:text-brand-teal transition-colors">
-                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
-                    <!-- DIUBAH: Ukuran ikon dari w-6 h-6 (24px) menjadi w-7 h-7 (28px) -->
+                <!-- Ikon Shopee --><a href="https://s.shopee.co.id/4VUk4gJ5Tl" target="_blank" rel="noopener noreferrer" aria-label="Scentnice di Shopee" class="text-brand-dark hover:text-brand-teal transition-colors">
                     <img src="/scentnice-image/shopee-icon.webp" alt="Logo Shopee" class="w-7 h-7">
                 </a>
-                <!-- Ikon TikTok -->
-                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="Scentnice di TikTok" class="text-brand-dark hover:text-brand-teal transition-colors">
-                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
-                    <!-- DIUBAH: Ukuran ikon dari w-6 h-6 (24px) menjadi w-7 h-7 (28px) -->
+                <!-- Ikon TikTok --><a href="https://www.tiktok.com/@scentniceofficial?_r=1&_t=ZS-919Toz14UHY" target="_blank" rel="noopener noreferrer" aria-label="Scentnice di TikTok" class="text-brand-dark hover:text-brand-teal transition-colors">
                     <img src="/scentnice-image/tiktok-icon.webp" alt="Logo TikTok Shop" class="w-7 h-7">
                 </a>
             </div>
             
-            <!-- Tombol Hamburger (Mobile) -->
-            <button id="menu-btn" class="md:hidden z-30 text-brand-dark">
+            <!-- Tombol Hamburger (Mobile) --><button id="menu-btn" class="md:hidden z-30 text-brand-dark">
                 <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
         </div>
         
-        <!-- Menu Mobile -->
-        <div id="mobile-menu" class="hidden absolute top-0 left-0 w-full bg-white shadow-lg md:hidden z-20" style="padding-top: 80px;">
+        <!-- Menu Mobile --><div id="mobile-menu" class="hidden absolute top-0 left-0 w-full bg-white shadow-lg md:hidden z-20" style="padding-top: 80px;">
             <div class="flex flex-col items-center justify-center min-h-screen space-y-8 pb-40">
                 <a href="#varian" class="text-2xl font-medium hover:text-brand-teal transition-colors">Varian</a>
                 <a href="#tentang" class="text-2xl font-medium hover:text-brand-teal transition-colors">Tentang Kami</a>
@@ -141,11 +120,9 @@
         </div>
     </nav>
 
-    <!-- 2. Hero Section -->
-    <section id="hero" class="pt-24 md:pt-32 bg-white">
+    <!-- 2. Hero Section --><section id="hero" class="pt-24 md:pt-32 bg-white">
         <div class="container mx-auto grid md:grid-cols-2 gap-8 md:gap-16 items-center px-4">
-            <!-- Kiri: Teks -->
-            <div class="flex flex-col justify-center space-y-6 text-center md:text-left fade-in">
+            <!-- Kiri: Teks --><div class="flex flex-col justify-center space-y-6 text-center md:text-left fade-in">
                 <h1 class="font-serif text-5xl md:text-7xl font-bold text-brand-deep-blue leading-tight">
                     Definisi Kesegaran Abadi.
                 </h1>
@@ -153,34 +130,26 @@
                     Temukan Scentnice "Aquatic"
                 </h2>
                 <p class="text-lg text-brand-gray max-w-lg mx-auto md:mx-0">
-                    <!-- DIPERBAIKI: Typo 'jrin' menjadi 'jernih' -->
                     Varian terlaris kami. Perpaduan sempurna aroma oceanic yang jernih dan sentuhan citrus premium. Diciptakan untuk jiwa yang bebas dan modern.
                 </p>
-                <!-- Tombol CTA -->
-                <div class="flex flex-col space-y-4 pt-4"> <!-- DIBUNGKUS: untuk menumpuk tombol WA -->
-                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
-                        <a href="https://shopee.co.id/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center px-8 py-4 bg-brand-teal text-white font-bold rounded-lg shadow-lg hover:bg-brand-deep-blue transform hover:-translate-y-1 transition-all duration-300">
-                            <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                <!-- Tombol CTA --><div class="flex flex-col space-y-4 pt-4"> <!-- DIBUNGKUS: untuk menumpuk tombol WA --><div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+                        <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center px-8 py-4 bg-brand-teal text-white font-bold rounded-lg shadow-lg hover:bg-brand-deep-blue transform hover:-translate-y-1 transition-all duration-300">
                             <img src="/scentnice-image/shopee-icon.webp" alt="Logo Shopee" class="w-5 h-5 mr-3">
                             Beli di Shopee
                         </a>
-                        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center px-8 py-4 bg-brand-gray text-white font-bold rounded-lg shadow-lg hover:bg-gray-700 transform hover:-translate-y-1 transition-all duration-300">
-                            <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                        <a href="https://vt.tokopedia.com/t/ZSHcQe8b589Dp-qw3Pq/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center px-8 py-4 bg-brand-gray text-white font-bold rounded-lg shadow-lg hover:bg-gray-700 transform hover:-translate-y-1 transition-all duration-300">
                             <img src="/scentnice-image/tiktok-icon.webp" alt="Logo TikTok Shop" class="w-5 h-5 mr-3">
                             Beli di TikTok Shop
                         </a>
                     </div>
-                    <!-- DITAMBAHKAN: Tombol WhatsApp -->
-                    <a href="https://wa.me/+628977400606" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full px-8 py-4 bg-green-500 text-white font-bold rounded-lg shadow-lg hover:bg-green-600 transform hover:-translate-y-1 transition-all duration-300">
+                    <!-- DITAMBAHKAN: Tombol WhatsApp --><a href="https://wa.me/+628977400606" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full px-8 py-4 bg-green-500 text-white font-bold rounded-lg shadow-lg hover:bg-green-600 transform hover:-translate-y-1 transition-all duration-300">
                         <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.5 2 2 6.5 2 12.04C2 17.58 6.5 22.08 12.04 22.08C17.58 22.08 22.08 17.58 22.08 12.04C22.08 6.5 17.58 2 12.04 2M16.6 15.06C16.3 15.86 15.06 16.56 14.2 16.62C13.52 16.68 12.12 16.2 10.38 14.46C8.34 12.44 7.38 11.18 7.38 9.46C7.38 7.74 8.58 6.46 9.22 5.84C9.86 5.2 10.64 5 11.32 5C11.48 5 11.64 5.02 11.8 5.04C12.48 5.16 12.74 5.84 12.9 6.18C13.16 6.76 13.3 7.38 13.3 7.38S13.22 7.68 13 8C12.78 8.22 12.52 8.28 12.3 8.5C12.06 8.72 11.84 8.96 12.04 9.3C12.26 9.66 12.84 10.64 13.7 11.5C14.82 12.62 15.62 12.92 15.98 13.1C16.34 13.28 16.58 13.2 16.8 12.98C17.02 12.76 17.7 12.06 17.7 12.06C18.08 11.7 18.66 11.7 18.92 11.92C19.18 12.14 19.74 12.76 19.74 12.76C20 12.98 20.08 13.28 19.9 13.7C19.74 14.14 18.9 14.82 18.32 15.4C17.74 15.98 16.9 16.28 16.6 15.06Z"></path></svg>
                         Beli Sekarang via WhatsApp
                     </a>
                 </div>
             </div>
             
-            <!-- Kanan: Visual -->
-            <!-- DIUBAH: Path gambar dari placehold.co ke repositori DAN ekstensi .jpg ke .webp -->
-            <div class="flex items-center justify-center p-4 md:p-0 fade-in">
+            <!-- Kanan: Visual --><div class="flex items-center justify-center p-4 md:p-0 fade-in">
                 <img src="/scentnice-image/hero-pic.webp" 
                      alt="Foto editorial botol parfum Scentnice Aquatic dengan cipratan air" 
                      class="rounded-2xl shadow-2xl w-full max-w-md object-cover"
@@ -189,34 +158,28 @@
         </div>
     </section>
 
-    <!-- 3. Trust Bar -->
-    <section id="trustbar" class="py-16 bg-gray-50 mt-16">
+    <!-- 3. Trust Bar --><section id="trustbar" class="py-16 bg-gray-50 mt-16">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <!-- Poin 1: Tahan 8+ Jam -->
-                <div class="flex flex-col items-center space-y-3 fade-in">
+                <!-- Poin 1: Tahan 8+ Jam --><div class="flex flex-col items-center space-y-3 fade-in">
                     <div class="bg-brand-teal text-white p-4 rounded-full">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     </div>
                     <h3 class="font-bold text-lg text-brand-deep-blue">Tahan 8+ Jam</h3>
                 </div>
-                <!-- Poin 2: Bahan Premium -->
-                <div class="flex flex-col items-center space-y-3 fade-in">
+                <!-- Poin 2: Bahan Premium --><div class="flex flex-col items-center space-y-3 fade-in">
                     <div class="bg-brand-teal text-white p-4 rounded-full">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-2.828 0l-7 7a2 2 0 01-2.828 0l-7-7a2 2 0 012.828-2.828l7 7a2 2 0 002.828 0l7-7a2 2 0 012.828 2.828zM4.572 15.428a2 2 0 10-2.828-2.828 2 2 0 002.828 2.828zM19.428 4.572a2 2 0 10-2.828-2.828 2 2 0 002.828 2.828z"></path></svg>
                     </div>
-                    <!-- DIPERBAIKI: Diterjemahkan untuk konsistensi -->
                     <h3 class="font-bold text-lg text-brand-deep-blue">Bahan Premium</h3>
                 </div>
-                <!-- Poin 3: BPOM Certified -->
-                <div class="flex flex-col items-center space-y-3 fade-in">
+                <!-- Poin 3: BPOM Certified --><div class="flex flex-col items-center space-y-3 fade-in">
                     <div class="bg-brand-teal text-white p-4 rounded-full">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                     </div>
                     <h3 class="font-bold text-lg text-brand-deep-blue">BPOM Certified</h3>
                 </div>
-                <!-- Poin 4: Gratis Ongkir -->
-                <div class="flex flex-col items-center space-y-3 fade-in">
+                <!-- Poin 4: Gratis Ongkir --><div class="flex flex-col items-center space-y-3 fade-in">
                     <div class="bg-brand-teal text-white p-4 rounded-full">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6H5V4h14v10h-4M5 16H3v-4H1V6h2M13 16h8v-4h-2V6h-6v10z"></path></svg>
                     </div>
@@ -226,41 +189,32 @@
         </div>
     </section>
 
-    <!-- 4. Bagian "Why Aquatic?" (Detail Produk) -->
-    <section id="tentang" class="py-24 bg-white">
+    <!-- 4. Bagian "Why Aquatic?" (Detail Produk) --><section id="tentang" class="py-24 bg-white">
         <div class="container mx-auto px-4 space-y-20">
-            <!-- Blok 1: Aroma -->
-            <!-- DIUBAH: Path gambar dari placehold.co ke repositori DAN ekstensi .jpg ke .webp -->
-            <div class="grid md:grid-cols-2 gap-12 items-center fade-in">
-                <!-- Visual (Kiri) -->
-                <div>
+            <!-- Blok 1: Aroma --><div class="grid md:grid-cols-2 gap-12 items-center fade-in">
+                <!-- Visual (Kiri) --><div>
                     <img src="/scentnice-image/lifestyle-shot-beach.webp" 
                          alt="Foto lifestyle model pria/wanita di dekat pantai" 
                          class="rounded-2xl shadow-xl w-full object-cover"
                          onerror="this.src='https://placehold.co/600x500/F0F4F8/333?text=Gagal+Memuat+Gambar&font=montserrat'">
                 </div>
-                <!-- Teks (Kanan) -->
-                <div class="pl-0 md:pl-8">
+                <!-- Teks (Kanan) --><div class="pl-0 md:pl-8">
                     <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6 text-brand-deep-blue">
                         Aroma yang Memikat
                     </h2>
                     <p class="text-lg mb-8 text-brand-gray">
                         Bukan sekadar wangi, tapi sebuah pengalaman. 'Aquatic' dibuka dengan ledakan segar Bergamot dan Sea Salt, disusul dengan kelembutan Jasmine di intinya, dan ditutup oleh hangatnya Amberwood.
                     </p>
-                    <!-- Detail Aroma (Notes) -->
-                    <div class="space-y-4">
+                    <!-- Detail Aroma (Notes) --><div class="space-y-4">
                         <div>
-                            <!-- DIPERBAIKI: Diterjemahkan untuk konsistensi -->
                             <h4 class="font-bold text-xl text-brand-teal">Aroma Atas (Top Notes):</h4>
                             <p class="text-lg text-brand-gray">Bergamot, Lemon, Sea Salt</p>
                         </div>
                         <div>
-                            <!-- DIPERBAIKI: Diterjemahkan untuk konsistensi -->
                             <h4 class="font-bold text-xl text-brand-teal">Aroma Tengah (Middle Notes):</h4>
                             <p class="text-lg text-brand-gray">Jasmine, Neroli</p>
                         </div>
                         <div>
-                            <!-- DIPERBAIKI: Diterjemahkan untuk konsistensi -->
                             <h4 class="font-bold text-xl text-brand-teal">Aroma Dasar (Base Notes):</h4>
                             <p class="text-lg text-brand-gray">Amberwood, Musk</p>
                         </div>
@@ -268,10 +222,8 @@
                 </div>
             </div>
             
-            <!-- Blok 2: Daya Tahan -->
-            <div class="grid md:grid-cols-2 gap-12 items-center fade-in">
-                <!-- Teks (Kiri) -->
-                <div class="pr-0 md:pr-8">
+            <!-- Blok 2: Daya Tahan --><div class="grid md:grid-cols-2 gap-12 items-center fade-in">
+                <!-- Teks (Kiri) --><div class="pr-0 md:pr-8">
                     <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6 text-brand-deep-blue">
                         Diciptakan untuk Bertahan
                     </h2>
@@ -284,10 +236,7 @@
                         <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-brand-teal" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Ideal untuk pemakaian sehari-hari</li>
                     </ul>
                 </div>
-                <!-- Visual (Kanan) -->
-                <div class="md:order-first"> <!-- Balik urutan di desktop -->
-                    <!-- DIUBAH: Path gambar dari placehold.co ke repositori DAN ekstensi .jpg ke .webp -->
-                    <img src="/scentnice-image/mist-spray-closeup.webp" 
+                <!-- Visual (Kanan) --><div class="md:order-first"> <!-- Balik urutan di desktop --><img src="/scentnice-image/mist-spray-closeup.webp" 
                          alt="Foto close-up semprotan parfum 'Aquatic' yang halus" 
                          class="rounded-2xl shadow-xl w-full object-cover"
                          onerror="this.src='https://placehold.co/600x500/07575B/FFF?text=Gagal+Memuat+Gambar&font=montserrat'">
@@ -296,58 +245,49 @@
         </div>
     </section>
 
-    <!-- 5. Bagian Testimoni -->
-    <section id="testimoni" class="py-24 bg-gray-50">
+    <!-- 5. Bagian Testimoni --><section id="testimoni" class="py-24 bg-gray-50">
         <div class="container mx-auto px-4">
             <h2 class="font-serif text-4xl md:text-5xl font-bold text-center mb-16 text-brand-deep-blue">
                 Apa Kata Mereka Tentang "Aquatic"
             </h2>
             
-            <!-- DIUBAH: Placeholder div diganti dengan <img> tag untuk screenshot -->
             <div id="review-carousel" class="flex overflow-x-auto gap-8 p-4 no-scrollbar">
                 
-                <!-- Placeholder Ulasan 1 -->
-                <img src="/scentnice-image/review-1.webp" 
+                <!-- Placeholder Ulasan 1 --><img src="/scentnice-image/review-1.webp" 
                      alt="Ulasan Scentnice 1" 
-                     class="review-card flex-none w-80 object-cover object-top rounded-2xl shadow-lg bg-gray-100 border-4 border-dashed border-gray-300"
+                     <!-- DIUBAH: Kelas styling dari border-4 border-dashed border-gray-300 menjadi shadow-md hover:shadow-lg rounded-xl -->class="review-card flex-none w-80 object-cover object-top rounded-xl shadow-md bg-white transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                      onerror="this.src='https://placehold.co/360x640/EEEEEE/AAAAAA?text=Ulasan+1&font=montserrat'">
 
-                <!-- Placeholder Ulasan 2 -->
-                <img src="/scentnice-image/review-2.webp" 
+                <!-- Placeholder Ulasan 2 --><img src="/scentnice-image/review-2.webp" 
                      alt="Ulasan Scentnice 2" 
-                     class="review-card flex-none w-80 object-cover object-top rounded-2xl shadow-lg bg-gray-100 border-4 border-dashed border-gray-300"
+                     class="review-card flex-none w-80 object-cover object-top rounded-xl shadow-md bg-white transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                      onerror="this.src='https://placehold.co/360x640/EEEEEE/AAAAAA?text=Ulasan+2&font=montserrat'">
                 
-                <!-- Placeholder Ulasan 3 -->
-                <img src="/scentnice-image/review-3.webp" 
+                <!-- Placeholder Ulasan 3 --><img src="/scentnice-image/review-3.webp" 
                      alt="Ulasan Scentnice 3" 
-                     class="review-card flex-none w-80 object-cover object-top rounded-2xl shadow-lg bg-gray-100 border-4 border-dashed border-gray-300"
+                     class="review-card flex-none w-80 object-cover object-top rounded-xl shadow-md bg-white transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                      onerror="this.src='https://placehold.co/360x640/EEEEEE/AAAAAA?text=Ulasan+3&font=montserrat'">
 
-                <!-- Placeholder Ulasan 4 -->
-                <img src="/scentnice-image/review-4.webp" 
+                <!-- Placeholder Ulasan 4 --><img src="/scentnice-image/review-4.webp" 
                      alt="Ulasan Scentnice 4" 
-                     class="review-card flex-none w-80 object-cover object-top rounded-2xl shadow-lg bg-gray-100 border-4 border-dashed border-gray-300"
+                     class="review-card flex-none w-80 object-cover object-top rounded-xl shadow-md bg-white transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                      onerror="this.src='https://placehold.co/360x640/EEEEEE/AAAAAA?text=Ulasan+4&font=montserrat'">
 
-                <!-- Placeholder Ulasan 5 -->
-                <img src="/scentnice-image/review-5.webp" 
+                <!-- Placeholder Ulasan 5 --><img src="/scentnice-image/review-5.webp" 
                      alt="Ulasan Scentnice 5" 
-                     class="review-card flex-none w-80 object-cover object-top rounded-2xl shadow-lg bg-gray-100 border-4 border-dashed border-gray-300"
+                     class="review-card flex-none w-80 object-cover object-top rounded-xl shadow-md bg-white transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                      onerror="this.src='https://placehold.co/360x640/EEEEEE/AAAAAA?text=Ulasan+5&font=montserrat'">
 
-                <!-- Placeholder Ulasan 6 -->
-                <img src="/scentnice-image/review-6.webp" 
+                <!-- Placeholder Ulasan 6 --><img src="/scentnice-image/review-6.webp" 
                      alt="Ulasan Scentnice 6" 
-                     class="review-card flex-none w-80 object-cover object-top rounded-2xl shadow-lg bg-gray-100 border-4 border-dashed border-gray-300"
+                     class="review-card flex-none w-80 object-cover object-top rounded-xl shadow-md bg-white transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                      onerror="this.src='https://placehold.co/360x640/EEEEEE/AAAAAA?text=Ulasan+6&font=montserrat'">
 
             </div>
         </div>
     </section>
 
-    <!-- BARU: Bagian Varian Lain (Carousel) -->
-    <section id="varian" class="py-24 bg-white">
+    <!-- BARU: Bagian Varian Lain (Carousel) --><section id="varian" class="py-24 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="font-serif text-4xl md:text-5xl font-bold text-center mb-16 text-brand-deep-blue fade-in">
                 Jelajahi Varian Kami Lainnya
@@ -355,362 +295,278 @@
             
             <div id="variant-carousel" class="flex overflow-x-auto gap-8 p-4 md:p-4 no-scrollbar">
                 
-                <!-- Kartu Varian 1 -->
-                <div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in">
-                    <!-- Gambar dengan Efek Zoom -->
-                    <div class="overflow-hidden h-64">
-                        <!-- DIUBAH: Path gambar dan ekstensi .jpg ke .webp -->
+                <!-- Kartu Varian 1 --><div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in">
+                    <!-- Gambar dengan Efek Zoom --><div class="overflow-hidden h-64">
                         <img src="/scentnice-image/varian-spicy.webp" 
                              alt="Parfum Scentnice Varian Spicy" 
                              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
                     </div>
                     
-                    <!-- Konten Kartu -->
-                    <div class="p-6">
+                    <!-- Konten Kartu --><div class="p-6">
                         <h3 class="font-serif text-2xl font-bold text-brand-deep-blue mb-2">Spicy</h3>
                         <p class="text-sm text-brand-gray mb-6">Signature Series. Teman dari Aquatic.</p>
                         
                         <div class="flex justify-between items-center pt-4 border-t border-gray-100">
-                            <!-- Ikon Toko -->
-                            <div class="flex space-x-3 items-center">
-                                <a href="https://shopee.co.id/" target="_blank" rel="noopener noreferrer" aria-label="Beli Spicy di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                            <!-- Ikon Toko --><div class="flex space-x-3 items-center">
+                                <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" aria-label="Beli Spicy di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/shopee-icon.webp" alt="Logo Shopee" class="w-6 h-6">
                                 </a>
-                                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="Beli Spicy di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                                <a href="https://vt.tokopedia.com/t/ZSHcQe8b589Dp-qw3Pq/" target="_blank" rel="noopener noreferrer" aria-label="Beli Spicy di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/tiktok-icon.webp" alt="Logo TikTok Shop" class="w-6 h-6">
                                 </a>
                             </div>
-                            <!-- Tombol Pesan -->
-                            <a href="#" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">
+                            <!-- Tombol Pesan --><a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">
                                 Pesan Sekarang
                             </a>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Kartu Varian 2 -->
-                <div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in" style="animation-delay: 150ms;">
-                    <!-- Gambar dengan Efek Zoom -->
-                    <div class="overflow-hidden h-64">
-                        <!-- DIUBAH: Path gambar dan ekstensi .jpg ke .webp -->
+                <!-- Kartu Varian 2 --><div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in" style="animation-delay: 150ms;">
+                    <!-- Gambar dengan Efek Zoom --><div class="overflow-hidden h-64">
                         <img src="/scentnice-image/varian-woody.webp" 
                              alt="Parfum Scentnice Varian Woody" 
                              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
                     </div>
                     
-                    <!-- Konten Kartu -->
-                    <div class="p-6">
+                    <!-- Konten Kartu --><div class="p-6">
                         <h3 class="font-serif text-2xl font-bold text-brand-deep-blue mb-2">Woody</h3>
                         <p class="text-sm text-brand-gray mb-6">Signature Series. Teman dari Aquatic.</p>
                         
                         <div class="flex justify-between items-center pt-4 border-t border-gray-100">
-                            <!-- Ikon Toko -->
-                            <div class="flex space-x-3 items-center">
-                                <a href="https://shopee.co.id/" target="_blank" rel="noopener noreferrer" aria-label="Beli Woody di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                            <!-- Ikon Toko --><div class="flex space-x-3 items-center">
+                                <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" aria-label="Beli Woody di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/shopee-icon.webp" alt="Logo Shopee" class="w-6 h-6">
                                 </a>
-                                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="Beli Woody di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                                <a href="https://vt.tokopedia.com/t/ZSHcQe8b589Dp-qw3Pq/" target="_blank" rel="noopener noreferrer" aria-label="Beli Woody di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/tiktok-icon.webp" alt="Logo TikTok Shop" class="w-6 h-6">
                                 </a>
                             </div>
-                            <!-- Tombol Pesan -->
-                            <a href="#" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">
+                            <!-- Tombol Pesan --><a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">
                                 Pesan Sekarang
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Kartu Varian 3 -->
-                <div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in" style="animation-delay: 300ms;">
-                    <!-- Gambar dengan Efek Zoom -->
-                    <div class="overflow-hidden h-64">
-                        <!-- DIUBAH: Path gambar dan ekstensi .jpg ke .webp -->
+                <!-- Kartu Varian 3 --><div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in" style="animation-delay: 300ms;">
+                    <!-- Gambar dengan Efek Zoom --><div class="overflow-hidden h-64">
                         <img src="/scentnice-image/varian-endures.webp" 
                              alt="Parfum Scentnice Varian Endures" 
                              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
                     </div>
                     
-                    <!-- Konten Kartu -->
-                    <div class="p-6">
+                    <!-- Konten Kartu --><div class="p-6">
                         <h3 class="font-serif text-2xl font-bold text-brand-deep-blue mb-2">Endures</h3>
                         <p class="text-sm text-brand-gray mb-6">Black Series. Diciptakan untuk jiwa yang tangguh.</p>
                         
                         <div class="flex justify-between items-center pt-4 border-t border-gray-100">
-                            <!-- Ikon Toko -->
-                            <div class="flex space-x-3 items-center">
-                                <a href="https://shopee.co.id/" target="_blank" rel="noopener noreferrer" aria-label="Beli Endures di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                            <!-- Ikon Toko --><div class="flex space-x-3 items-center">
+                                <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" aria-label="Beli Endures di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/shopee-icon.webp" alt="Logo Shopee" class="w-6 h-6">
                                 </a>
-                                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="Beli Endures di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                                <a href="https://vt.tokopedia.com/t/ZSHcQe8b589Dp-qw3Pq/" target="_blank" rel="noopener noreferrer" aria-label="Beli Endures di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/tiktok-icon.webp" alt="Logo TikTok Shop" class="w-6 h-6">
                                 </a>
                             </div>
-                            <!-- Tombol Pesan -->
-                            <a href="#" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">
+                            <!-- Tombol Pesan --><a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">
                                 Pesan Sekarang
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Kartu Varian 4 -->
-                <div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in" style="animation-delay: 450ms;">
-                    <!-- Gambar dengan Efek Zoom -->
-                    <div class="overflow-hidden h-64">
-                        <!-- DIUBAH: Path gambar dan ekstensi .jpg ke .webp -->
+                <!-- Kartu Varian 4 --><div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in" style="animation-delay: 450ms;">
+                    <!-- Gambar dengan Efek Zoom --><div class="overflow-hidden h-64">
                         <img src="/scentnice-image/varian-curious.webp" 
                              alt="Parfum Scentnice Varian Curious" 
                              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
                     </div>
-                    <!-- Konten Kartu -->
-                    <div class="p-6">
+                    <!-- Konten Kartu --><div class="p-6">
                         <h3 class="font-serif text-2xl font-bold text-brand-deep-blue mb-2">Curious</h3>
                         <p class="text-sm text-brand-gray mb-6">Black Series. Untuk jiwa yang penuh rasa ingin tahu.</p>
                         <div class="flex justify-between items-center pt-4 border-t border-gray-100">
-                            <!-- Ikon Toko -->
-                            <div class="flex space-x-3 items-center">
-                                <a href="https://shopee.co.id/" target="_blank" rel="noopener noreferrer" aria-label="Beli Curious di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                            <!-- Ikon Toko --><div class="flex space-x-3 items-center">
+                                <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" aria-label="Beli Curious di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/shopee-icon.webp" alt="Logo Shopee" class="w-6 h-6">
                                 </a>
-                                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="Beli Curious di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                                <a href="https://vt.tokopedia.com/t/ZSHcQe8b589Dp-qw3Pq/" target="_blank" rel="noopener noreferrer" aria-label="Beli Curious di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/tiktok-icon.webp" alt="Logo TikTok Shop" class="w-6 h-6">
                                 </a>
                             </div>
-                            <a href="#" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">Pesan Sekarang</a>
+                            <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">Pesan Sekarang</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Kartu Varian 5 -->
-                <div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in" style="animation-delay: 600ms;">
-                    <!-- Gambar dengan Efek Zoom -->
-                    <div class="overflow-hidden h-64">
-                        <!-- DIUBAH: Path gambar dan ekstensi .jpg ke .webp -->
+                <!-- Kartu Varian 5 --><div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in" style="animation-delay: 600ms;">
+                    <!-- Gambar dengan Efek Zoom --><div class="overflow-hidden h-64">
                         <img src="/scentnice-image/varian-steady.webp" 
                              alt="Parfum Scentnice Varian Steady" 
                              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
                     </div>
-                    <!-- Konten Kartu -->
-                    <div class="p-6">
+                    <!-- Konten Kartu --><div class="p-6">
                         <h3 class="font-serif text-2xl font-bold text-brand-deep-blue mb-2">Steady</h3>
                         <p class="text-sm text-brand-gray mb-6">Black Series. Aroma yang tenang dan stabil.</p>
                         <div class="flex justify-between items-center pt-4 border-t border-gray-100">
-                            <!-- Ikon Toko -->
-                            <div class="flex space-x-3 items-center">
-                                <a href="https://shopee.co.id/" target="_blank" rel="noopener noreferrer" aria-label="Beli Steady di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                            <!-- Ikon Toko --><div class="flex space-x-3 items-center">
+                                <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" aria-label="Beli Steady di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/shopee-icon.webp" alt="Logo Shopee" class="w-6 h-6">
                                 </a>
-                                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="Beli Steady di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                                <a href="https://vt.tokopedia.com/t/ZSHcQe8b589Dp-qw3Pq/" target="_blank" rel="noopener noreferrer" aria-label="Beli Steady di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/tiktok-icon.webp" alt="Logo TikTok Shop" class="w-6 h-6">
                                 </a>
                             </div>
-                            <a href="#" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">Pesan Sekarang</a>
+                            <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">Pesan Sekarang</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Kartu Varian 6 -->
-                <div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in" style="animation-delay: 750ms;">
-                    <!-- Gambar dengan Efek Zoom -->
-                    <div class="overflow-hidden h-64">
-                        <!-- DIUBAH: Path gambar dan ekstensi .jpg ke .webp -->
+                <!-- Kartu Varian 6 --><div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in" style="animation-delay: 750ms;">
+                    <!-- Gambar dengan Efek Zoom --><div class="overflow-hidden h-64">
                         <img src="/scentnice-image/varian-flowery.webp" 
                              alt="Parfum Scentnice Varian Flowery" 
                              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
                     </div>
-                    <!-- Konten Kartu -->
-                    <div class="p-6">
+                    <!-- Konten Kartu --><div class="p-6">
                         <h3 class="font-serif text-2xl font-bold text-brand-deep-blue mb-2">Flowery</h3>
                         <p class="text-sm text-brand-gray mb-6">Sweet Blossom Series. Aroma bunga yang mekar.</p>
                         <div class="flex justify-between items-center pt-4 border-t border-gray-100">
-                            <!-- Ikon Toko -->
-                            <div class="flex space-x-3 items-center">
-                                <a href="https://shopee.co.id/" target="_blank" rel="noopener noreferrer" aria-label="Beli Flowery di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                            <!-- Ikon Toko --><div class="flex space-x-3 items-center">
+                                <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" aria-label="Beli Flowery di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/shopee-icon.webp" alt="Logo Shopee" class="w-6 h-6">
                                 </a>
-                                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="Beli Flowery di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                                <a href="https://vt.tokopedia.com/t/ZSHcQe8b589Dp-qw3Pq/" target="_blank" rel="noopener noreferrer" aria-label="Beli Flowery di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/tiktok-icon.webp" alt="Logo TikTok Shop" class="w-6 h-6">
                                 </a>
                             </div>
-                            <a href="#" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">Pesan Sekarang</a>
+                            <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">Pesan Sekarang</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Kartu Varian 7 -->
-                <div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in">
-                    <!-- Gambar dengan Efek Zoom -->
-                    <div class="overflow-hidden h-64">
-                        <!-- DIUBAH: Path gambar dan ekstensi .jpg ke .webp -->
+                <!-- Kartu Varian 7 --><div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in">
+                    <!-- Gambar dengan Efek Zoom --><div class="overflow-hidden h-64">
                         <img src="/scentnice-image/varian-oriental.webp" 
                              alt="Parfum Scentnice Varian Oriental" 
                              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
                     </div>
-                    <!-- Konten Kartu -->
-                    <div class="p-6">
+                    <!-- Konten Kartu --><div class="p-6">
                         <h3 class="font-serif text-2xl font-bold text-brand-deep-blue mb-2">Oriental</h3>
                         <p class="text-sm text-brand-gray mb-6">Sweet Blossom Series. Manis dan eksotis.</p>
                         <div class="flex justify-between items-center pt-4 border-t border-gray-100">
-                            <!-- Ikon Toko -->
-                            <div class="flex space-x-3 items-center">
-                                <a href="https://shopee.co.id/" target="_blank" rel="noopener noreferrer" aria-label="Beli Oriental di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                            <!-- Ikon Toko --><div class="flex space-x-3 items-center">
+                                <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" aria-label="Beli Oriental di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/shopee-icon.webp" alt="Logo Shopee" class="w-6 h-6">
                                 </a>
-                                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="Beli Oriental di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                                <a href="https://vt.tokopedia.com/t/ZSHcQe8b589Dp-qw3Pq/" target="_blank" rel="noopener noreferrer" aria-label="Beli Oriental di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/tiktok-icon.webp" alt="Logo TikTok Shop" class="w-6 h-6">
                                 </a>
                             </div>
-                            <a href="#" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">Pesan Sekarang</a>
+                            <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">Pesan Sekarang</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Kartu Varian 8 -->
-                <div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in">
-                    <!-- Gambar dengan Efek Zoom -->
-                    <div class="overflow-hidden h-64">
-                        <!-- DIUBAH: Path gambar dan ekstensi .jpg ke .webp -->
+                <!-- Kartu Varian 8 --><div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in">
+                    <!-- Gambar dengan Efek Zoom --><div class="overflow-hidden h-64">
                         <img src="/scentnice-image/varian-fruity.webp" 
                              alt="Parfum Scentnice Varian Fruity" 
                              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
                     </div>
-                    <!-- Konten Kartu -->
-                    <div class="p-6">
+                    <!-- Konten Kartu --><div class="p-6">
                         <h3 class="font-serif text-2xl font-bold text-brand-deep-blue mb-2">Fruity</h3>
                         <p class="text-sm text-brand-gray mb-6">Sweet Blossom Series. Kesegaran aroma buah.</p>
                         <div class="flex justify-between items-center pt-4 border-t border-gray-100">
-                            <!-- Ikon Toko -->
-                            <div class="flex space-x-3 items-center">
-                                <a href="https://shopee.co.id/" target="_blank" rel="noopener noreferrer" aria-label="Beli Fruity di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                            <!-- Ikon Toko --><div class="flex space-x-3 items-center">
+                                <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" aria-label="Beli Fruity di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/shopee-icon.webp" alt="Logo Shopee" class="w-6 h-6">
                                 </a>
-                                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="Beli Fruity di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                                <a href="https://vt.tokopedia.com/t/ZSHcQe8b589Dp-qw3Pq/" target="_blank" rel="noopener noreferrer" aria-label="Beli Fruity di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/tiktok-icon.webp" alt="Logo TikTok Shop" class="w-6 h-6">
                                 </a>
                             </div>
-                            <a href="#" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">Pesan Sekarang</a>
+                            <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">Pesan Sekarang</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Kartu Varian 9 -->
-                <div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in">
-                    <!-- Gambar dengan Efek Zoom -->
-                    <div class="overflow-hidden h-64">
-                        <!-- DIUBAH: Path gambar dan ekstensi .jpg ke .webp -->
+                <!-- Kartu Varian 9 --><div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in">
+                    <!-- Gambar dengan Efek Zoom --><div class="overflow-hidden h-64">
                         <img src="/scentnice-image/varian-intensity.webp" 
                              alt="Parfum Scentnice Varian Intensity" 
                              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
                     </div>
-                    <!-- Konten Kartu -->
-                    <div class="p-6">
+                    <!-- Konten Kartu --><div class="p-6">
                         <h3 class="font-serif text-2xl font-bold text-brand-deep-blue mb-2">Intensity</h3>
                         <p class="text-sm text-brand-gray mb-6">Aromax Series. Aroma kuat dan intens.</p>
                         <div class="flex justify-between items-center pt-4 border-t border-gray-100">
-                            <!-- Ikon Toko -->
-                            <div class="flex space-x-3 items-center">
-                                <a href="https://shopee.co.id/" target="_blank" rel="noopener noreferrer" aria-label="Beli Intensity di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                            <!-- Ikon Toko --><div class="flex space-x-3 items-center">
+                                <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" aria-label="Beli Intensity di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/shopee-icon.webp" alt="Logo Shopee" class="w-6 h-6">
                                 </a>
-                                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="Beli Intensity di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                                <a href="https://vt.tokopedia.com/t/ZSHcQe8b589Dp-qw3Pq/" target="_blank" rel="noopener noreferrer" aria-label="Beli Intensity di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/tiktok-icon.webp" alt="Logo TikTok Shop" class="w-6 h-6">
                                 </a>
                             </div>
-                            <a href="#" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">Pesan Sekarang</a>
+                            <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">Pesan Sekarang</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Kartu Varian 10 -->
-                <div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in">
-                    <!-- Gambar dengan Efek Zoom -->
-                    <div class="overflow-hidden h-64">
-                        <!-- DIUBAH: Path gambar dan ekstensi .jpg ke .webp -->
+                <!-- Kartu Varian 10 --><div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in">
+                    <!-- Gambar dengan Efek Zoom --><div class="overflow-hidden h-64">
                         <img src="/scentnice-image/varian-vibrant.webp" 
                              alt="Parfum Scentnice Varian Vibrant" 
                              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
                     </div>
-                    <!-- Konten Kartu -->
-                    <div class="p-6">
+                    <!-- Konten Kartu --><div class="p-6">
                         <h3 class="font-serif text-2xl font-bold text-brand-deep-blue mb-2">Vibrant</h3>
                         <p class="text-sm text-brand-gray mb-6">Aromax Series. Aroma yang penuh semangat.</p>
                         <div class="flex justify-between items-center pt-4 border-t border-gray-100">
-                            <!-- Ikon Toko -->
-                            <div class="flex space-x-3 items-center">
-                                <a href="https://shopee.co.id/" target="_blank" rel="noopener noreferrer" aria-label="Beli Vibrant di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                            <!-- Ikon Toko --><div class="flex space-x-3 items-center">
+                                <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" aria-label="Beli Vibrant di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/shopee-icon.webp" alt="Logo Shopee" class="w-6 h-6">
                                 </a>
-                                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="Beli Vibrant di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                                <a href="https://vt.tokopedia.com/t/ZSHcQe8b589Dp-qw3Pq/" target="_blank" rel="noopener noreferrer" aria-label="Beli Vibrant di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/tiktok-icon.webp" alt="Logo TikTok Shop" class="w-6 h-6">
                                 </a>
                             </div>
-                            <a href="#" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">Pesan Sekarang</a>
+                            <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">Pesan Sekarang</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Kartu Varian 11 -->
-                <div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in">
-                    <!-- Gambar dengan Efek Zoom -->
-                    <div class="overflow-hidden h-64">
-                        <!-- DIUBAH: Path gambar dan ekstensi .jpg ke .webp -->
+                <!-- Kartu Varian 11 --><div class="group flex-none w-80 md:w-auto bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 fade-in">
+                    <!-- Gambar dengan Efek Zoom --><div class="overflow-hidden h-64">
                         <img src="/scentnice-image/varian-elevate.webp" 
                              alt="Parfum Scentnice Varian Elevate" 
                              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
                     </div>
-                    <!-- Konten Kartu -->
-                    <div class="p-6">
+                    <!-- Konten Kartu --><div class="p-6">
                         <h3 class="font-serif text-2xl font-bold text-brand-deep-blue mb-2">Elevate</h3>
                         <p class="text-sm text-brand-gray mb-6">Aromax Series. Meningkatkan suasana hati.</p>
                         <div class="flex justify-between items-center pt-4 border-t border-gray-100">
-                            <!-- Ikon Toko -->
-                            <div class="flex space-x-3 items-center">
-                                <a href="https://shopee.co.id/" target="_blank" rel="noopener noreferrer" aria-label="Beli Elevate di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                            <!-- Ikon Toko --><div class="flex space-x-3 items-center">
+                                <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" aria-label="Beli Elevate di Shopee" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/shopee-icon.webp" alt="Logo Shopee" class="w-6 h-6">
                                 </a>
-                                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="Beli Elevate di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
-                                    <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                                <a href="https://vt.tokopedia.com/t/ZSHcQe8b589Dp-qw3Pq/" target="_blank" rel="noopener noreferrer" aria-label="Beli Elevate di TikTok" class="text-brand-gray hover:text-brand-teal transition-colors">
                                     <img src="/scentnice-image/tiktok-icon.webp" alt="Logo TikTok Shop" class="w-6 h-6">
                                 </a>
                             </div>
-                            <a href="#" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">Pesan Sekarang</a>
+                            <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" class="px-5 py-2 bg-brand-dark text-white text-sm font-bold rounded-lg hover:bg-brand-teal transition-colors duration-300">Pesan Sekarang</a>
                         </div>
                     </div>
                 </div>
 
 
-            </div> <!-- Akhir dari container carousel/grid -->
-        </div>
+            </div> <!-- Akhir dari container carousel/grid --></div>
     </section>
 
-    <!-- 6. Bagian Final Call-to-Action (CTA) -->
-    <section id="final-cta" class="py-24 bg-brand-deep-blue text-white text-center">
+    <!-- 6. Bagian Final Call-to-Action (CTA) --><section id="final-cta" class="py-24 bg-brand-deep-blue text-white text-center">
         <div class="container mx-auto px-4 flex flex-col items-center fade-in">
-            <!-- Visual: Botol + Kemasan -->
-            <!-- DIUBAH: Path gambar dari placehold.co ke repositori DAN ekstensi .jpg ke .webp -->
-            <img src="/scentnice-image/bottle-and-packaging.webp" 
+            <!-- Visual: Botol + Kemasan --><img src="/scentnice-image/bottle-and-packaging.webp" 
                  alt="Botol dan kemasan Scentnice Aquatic" 
                  class="w-48 md:w-64 -mb-12 md:-mb-16 rounded-lg shadow-2xl"
                  onerror="this.src='https://placehold.co/300x400/F9F9F9/003B46?text=Gagal+Memuat+Gambar&font=montserrat'">
@@ -722,23 +578,17 @@
                 <p class="text-lg max-w-2xl mx-auto mb-10 text-gray-200">
                     Stok "Aquatic" sangat terbatas karena tingginya permintaan. Jangan sampai kehabisan.
                 </p>
-                <!-- Tombol CTA (Ulangi) -->
-                <div class="flex flex-col justify-center space-y-4"> <!-- DIBUNGKUS: untuk menumpuk tombol WA -->
-                    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="https://shopee.co.id/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center px-8 py-4 bg-white text-brand-deep-blue font-bold rounded-lg shadow-lg hover:bg-gray-200 transform hover:-translate-y-1 transition-all duration-300">
-                            <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                <!-- Tombol CTA (Ulangi) --><div class="flex flex-col justify-center space-y-4"> <!-- DIBUNGKUS: untuk menumpuk tombol WA --><div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="https://s.shopee.co.id/4foAGaS09D" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center px-8 py-4 bg-white text-brand-deep-blue font-bold rounded-lg shadow-lg hover:bg-gray-200 transform hover:-translate-y-1 transition-all duration-300">
                             <img src="/scentnice-image/shopee-icon.webp" alt="Logo Shopee" class="w-5 h-5 mr-3">
                             Pesan di Shopee Sekarang
                         </a>
-                        <!-- DIUBAH: Kelas styling disamakan dengan tombol Shopee -->
-                        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center px-8 py-4 bg-white text-brand-deep-blue font-bold rounded-lg shadow-lg hover:bg-gray-200 transform hover:-translate-y-1 transition-all duration-300">
-                            <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                        <a href="https://vt.tokopedia.com/t/ZSHcQe8b589Dp-qw3Pq/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center px-8 py-4 bg-white text-brand-deep-blue font-bold rounded-lg shadow-lg hover:bg-gray-200 transform hover:-translate-y-1 transition-all duration-300">
                             <img src="/scentnice-image/tiktok-icon.webp" alt="Logo TikTok Shop" class="w-5 h-5 mr-3">
                             Lihat di TikTok Shop
                         </a>
                     </div>
-                    <!-- DITAMBAHKAN: Tombol WhatsApp -->
-                    <a href="https://wa.me/+628977400606" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full px-8 py-4 bg-green-500 text-white font-bold rounded-lg shadow-lg hover:bg-green-600 transform hover:-translate-y-1 transition-all duration-300">
+                    <!-- DITAMBAHKAN: Tombol WhatsApp --><a href="https://wa.me/+628977400606" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full px-8 py-4 bg-green-500 text-white font-bold rounded-lg shadow-lg hover:bg-green-600 transform hover:-translate-y-1 transition-all duration-300">
                         <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.5 2 2 6.5 2 12.04C2 17.58 6.5 22.08 12.04 22.08C17.58 22.08 22.08 17.58 22.08 12.04C22.08 6.5 17.58 2 12.04 2M16.6 15.06C16.3 15.86 15.06 16.56 14.2 16.62C13.52 16.68 12.12 16.2 10.38 14.46C8.34 12.44 7.38 11.18 7.38 9.46C7.38 7.74 8.58 6.46 9.22 5.84C9.86 5.2 10.64 5 11.32 5C11.48 5 11.64 5.02 11.8 5.04C12.48 5.16 12.74 5.84 12.9 6.18C13.16 6.76 13.3 7.38 13.3 7.38S13.22 7.68 13 8C12.78 8.22 12.52 8.28 12.3 8.5C12.06 8.72 11.84 8.96 12.04 9.3C12.26 9.66 12.84 10.64 13.7 11.5C14.82 12.62 15.62 12.92 15.98 13.1C16.34 13.28 16.58 13.2 16.8 12.98C17.02 12.76 17.7 12.06 17.7 12.06C18.08 11.7 18.66 11.7 18.92 11.92C19.18 12.14 19.74 12.76 19.74 12.76C20 12.98 20.08 13.28 19.9 13.7C19.74 14.14 18.9 14.82 18.32 15.4C17.74 15.98 16.9 16.28 16.6 15.06Z"></path></svg>
                         Beli Sekarang via WhatsApp
                     </a>
@@ -747,23 +597,18 @@
         </div>
     </section>
 
-    <!-- 7. Footer -->
-    <footer class="py-20 bg-brand-dark text-gray-300">
+    <!-- 7. Footer --><footer class="py-20 bg-brand-dark text-gray-300">
         <div class="container mx-auto px-4 grid md:grid-cols-3 gap-12">
-            <!-- Kiri: Logo & Copyright -->
-            <div>
-                <!-- DIUBAH: Teks logo diganti ke <img> placeholder -->
+            <!-- Kiri: Logo & Copyright --><div>
                 <a href="#">
-                    <img src="/scentnice-image/logo-footer.webp" alt="Scentnice Logo" class="h-10 w-auto"> <!-- h-10 (40px) sebagai ukuran default, bisa disesuaikan -->
-                </a>
+                    <img src="/scentnice-image/logo-footer.webp" alt="Scentnice Logo" class="h-10 w-auto"> <!-- h-10 (40px) sebagai ukuran default, bisa disesuaikan --></a>
                 <p class="text-sm mt-4 text-gray-400">
                     © 2025 Scentnice. All Rights Reserved. <br>
                     Diciptakan untuk jiwa yang bebas.
                 </p>
             </div>
             
-            <!-- Tengah: Link Cepat -->
-            <div>
+            <!-- Tengah: Link Cepat --><div>
                 <h4 class="font-bold text-lg mb-4 text-white">Perusahaan</h4>
                 <ul class="space-y-3">
                     <li><a href="#" class="hover:text-white transition-colors">Tentang Kami</a></li>
@@ -773,22 +618,17 @@
                 </ul>
             </div>
             
-            <!-- Kanan: Sosial Media -->
-            <div>
+            <!-- Kanan: Sosial Media --><div>
                 <h4 class="font-bold text-lg mb-4 text-white">Ikuti Kami</h4>
                 <p class="text-gray-400 mb-4">Dapatkan info promo & varian terbaru.</p>
                 <div class="flex space-x-5">
-                    <!-- Ikon Instagram -->
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Scentnice di Instagram" class="text-gray-400 hover:text-white transition-colors">
+                    <!-- Ikon Instagram --><a href="https://www.instagram.com/scentniceofficial?igsh=bnF4bHlidGRkMTgy" target="_blank" rel="noopener noreferrer" aria-label="Scentnice di Instagram" class="text-gray-400 hover:text-white transition-colors">
                         <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.07 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.324a4.162 4.162 0 110-8.324 4.162 4.162 0 010 8.324zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"></path></svg>
                     </a>
-                    <!-- Ikon TikTok -->
-                    <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="Scentnice di TikTok" class="text-gray-400 hover:text-white transition-colors">
-                        <!-- DIUBAH: SVG diganti ke <img> placeholder -->
+                    <!-- Ikon TikTok --><a href="https://www.tiktok.com/@scentniceofficial?_r=1&_t=ZS-919Toz14UHY" target="_blank" rel="noopener noreferrer" aria-label="Scentnice di TikTok" class="text-gray-400 hover:text-white transition-colors">
                         <img src="/scentnice-image/tiktok-icon.webp" alt="Logo TikTok Shop" class="w-7 h-7">
                     </a>
-                    <!-- Ikon Facebook -->
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Scentnice di Facebook" class="text-gray-400 hover:text-white transition-colors">
+                    <!-- Ikon Facebook --><a href="https://www.facebook.com/scentnice.co.id/" target="_blank" rel="noopener noreferrer" aria-label="Scentnice di Facebook" class="text-gray-400 hover:text-white transition-colors">
                         <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
                     </a>
                 </div>
@@ -796,8 +636,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript untuk fungsionalitas -->
-    <script>
+    <!-- JavaScript untuk fungsionalitas --><script>
         document.addEventListener('DOMContentLoaded', () => {
             // --- Logika untuk Navbar Sticky ---
             const nav = document.getElementById('navbar');
